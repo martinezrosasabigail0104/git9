@@ -50,8 +50,8 @@ $('#pause').click(function (){
 $('#stop').click(function (){
 	audio.pause ();
 	audio.currentTime = 0;
-	$('#pause').show();
-	$('#play').hide();
+	$('#pause').hide();
+	$('#play').show();
 	$('#duration').fadeOut(400);
 });
 
@@ -79,7 +79,7 @@ $('#prev').click(function (){
 	showDuration();
 });
 
-//Playlist Song Click+
+//Playlist Song Click
 $('#playlist li').click(function (){
 	audio.pause ();
 	initAudio($(this));
